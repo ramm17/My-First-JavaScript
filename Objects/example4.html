@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h2>JavaScript Objects</h2>
+    <p>An object method is a function defination, stores as a property value.</p>
+
+    <p id="demo1"></p>
+
+    <p>If you access an object method without the parentheses (), it will return the function defination:</p>
+
+    <p id="demo2"></p>
+    <script>
+        //Create an object
+        const person = {
+            firstName:"Ramm",
+            lastName:"Rana",
+            id: 7266,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        // Display data from the object
+        document.getElementById("demo1").innerHTML = person.fullName();
+
+        document.getElementById('demo2').innerHTML=person.fullName;
+    </script>
+
+</body>
+</html>
+
